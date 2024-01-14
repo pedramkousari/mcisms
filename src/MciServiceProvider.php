@@ -22,7 +22,7 @@ class MciServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->make(\Pedramkousari\Sms\SmsManager::class)->extend('mci', function (){
-            return new MciDriver();
+            return new MciDriver(config('sms.drivers.'.config('sms.default')));
         });
     }
 }
