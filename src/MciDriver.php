@@ -46,9 +46,9 @@ class MciDriver extends Driver implements DriverMultipleContactsInterface
 
     public function send(): SmsDriverResponse
     {
-//        if (empty($this->token)) {
-//            $this->login();
-//        }
+        if (empty($this->token)) {
+            $this->login();
+        }
 
         $recipients = collect(Arr::wrap($this->getTo()))->map(function ($recipient) {
             return [
