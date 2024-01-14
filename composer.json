@@ -1,0 +1,16 @@
+{
+    "name": "pedramkousari/mcisms",
+    "autoload": {
+        "psr-4": {
+            "Pedramkousari\\Mcisms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pedram kousari",
+            "email": "persianped@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
